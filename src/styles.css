@@ -1,0 +1,131 @@
+:root {
+--primary-font: 'Aboreto',
+   cursive;
+--secondary-font: 'Jost',
+   sans-serif;
+--primary-color: #cdee4a; 
+--secondary-color: rgba(170, 76, 180, 0.678);
+--background-color: rgba(255, 255, 255, 0.719);  
+}
+
+body {
+   background: var(--primary-color);
+}
+
+.container {
+text-align: center;
+}
+
+.heading-wrap {
+   margin: 80px 300px;
+   display: flex;
+   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+.heading-wrap {
+   margin: 100px;
+}
+}
+
+h2, h3 {
+color: var(--secondary-color);
+font-family: var(--secondary-font);
+font-weight: 400;
+}
+
+h1 {
+   text-align: center;
+   font-size: 100px;
+   color: #F2FEDC;
+   font-family: var(--primary-font);
+   margin: 30px 0 10px;
+}
+
+h2 {
+   margin: 10px 0;
+   font-size: 50px;
+   text-align: start;
+}
+
+h3 {
+   text-align: end;
+   margin: 5px 0;
+   font-size: 20px;
+   opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+   h1, 
+   h2,
+   h3 {
+      text-align: start;
+   }
+}
+
+div.navigation {
+   display: flex;
+   justify-content: center;
+}
+
+button {
+   padding: 10px 20px;
+   margin: 0 30px;
+   border: 1px solid var(--secondary-color);
+   background: var(--background-color);
+   font-family: 'Aboreto',
+      cursive;
+   font-size: 20px;
+   box-shadow: 5px 5px #638900;
+}
+
+button:hover {
+   background: var(--secondary-color);
+   box-shadow: 8px 8px #638900;
+   transition: 400ms ease-in-out;
+   color: #F2FEDC;
+   cursor: pointer;
+}
+
+button:active {
+box-shadow: 1px 1px var(--secondary-color);
+}
+
+a.mainPage {
+   text-decoration: none;
+   line-height: 1.5;
+}
+
+div.paragraph-wrap {
+   display: flex;
+}
+
+@media (max-width: 1024px) {
+   div.paragraph-wrap {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+p {
+   padding: 20px 24px;
+   margin: 20px;
+   background: var(--background-color);
+   border-radius: 20px;
+   font-family: var(--secondary-font);
+   text-align: start;
+}
+
+a.general {
+   text-decoration: none;
+   font-family: var(--secondary-font);
+   font-size: 25px;
+   color: #385F00;
+}
+
+a.general:hover {
+   background: var(--background-color);
+   transition: background 500ms ease-in-out;
+   border-radius: 10px;
+}
+
