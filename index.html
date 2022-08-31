@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dana Klymenko Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,20 +20,141 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="heading-wrap">
-        <h2>&lt;Hello world,&gt; I am</h2>
-        <h1>Dana Klymenko</h1>
-        <h3>&lt;&#47;Frontend developer based in Europe&gt;</h3>
-      </div>
-      <div class="navigation">
-        <a href="info/about.html" target="_blank" class="mainPage"
-          ><button>About me</button></a
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-element">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dana Klymenko</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <a href="info/about.html#contact-me" target="_blank" class="mainPage"
-          ><button>Contact Page</button></a
-        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="info/about.html">About me</a>
+            <a class="nav-link" href="info/about.html#contact-me">Contact me</a>
+          </div>
+        </div>
       </div>
+    </nav>
+    <div class="heading-wrap">
+      <h2>&lt;Hello world,&gt; I am</h2>
+      <div class="main-heading-display">
+        <span class="lastName">Klymenko</span>
+        <h1>Dana</h1>
+      </div>
+      <h3>&lt;&#47;Frontend developer based in Europe&gt;</h3>
     </div>
+    <div class="navigation">
+      <a href="info/about.html" target="_blank" class="mainPage"
+        ><button>About me</button></a
+      >
+      <a href="info/about.html#contact-me" target="_blank" class="mainPage"
+        ><button>Contact Page</button></a
+      >
+    </div>
+    <section>
+      <div class="container my-5">
+        <div class="row my-5">
+          <div class="col-sm-6">
+            <img
+              src="images/mounts-prjct.png"
+              alt="Carpathians Landing page"
+              class="img-fluid rounded shadow box-main-page ps-0"
+              width="600px"
+            />
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <h2 class="ms-4 text-start box-main-page">
+                Carpathian Mountains app
+              </h2>
+              <p class="bg-transparent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nulla rem est id suscipit molestias praesentium consectetur
+                voluptas pariatur enim animi repellendus iusto ut totam non
+                nihil quaerat debitis reiciendis vero, tempora facilis esse
+                dolor. Expedita odit nesciunt, laudantium deleniti et soluta in,
+                rerum corporis velit blanditiis dolores doloremque fuga?
+              </p>
+              <a
+                href="https://gilded-mounts.netlify.app/"
+                target="_blank"
+                class="mainPage"
+                ><button class="d-block">Launch Carpathians app</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <h2 class="ms-4 text-start box-main-page">Weather app</h2>
+              <p class="bg-transparent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nulla rem est id suscipit molestias praesentium consectetur
+                voluptas pariatur enim animi repellendus iusto ut totam non
+                nihil quaerat debitis reiciendis vero, tempora facilis esse
+                dolor. Expedita odit nesciunt, laudantium deleniti et soluta in,
+                rerum corporis velit blanditiis dolores doloremque fuga?
+              </p>
+              <a
+                href="https://my-first-weather-project.netlify.app/"
+                target="_blank"
+                class="mainPage"
+                ><button class="d-block">Launch Weather app</button></a
+              >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img
+              src="images/weather-prjct.png"
+              alt="Weather app"
+              class="img-fluid rounded shadow box-main-page ps-0"
+              width="600px"
+            />
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-6">
+            <img
+              src="images/coming_soon.jpg"
+              alt="Coming soon"
+              class="img-fluid rounded shadow box-main-page ps-0"
+              width="600px"
+            />
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <h2 class="ms-4 text-start box-main-page">Coming Soon</h2>
+              <p class="bg-transparent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nulla rem est id suscipit molestias praesentium consectetur
+                voluptas pariatur enim animi repellendus iusto ut totam non
+                nihil quaerat debitis reiciendis vero, tempora facilis esse
+                dolor. Expedita odit nesciunt, laudantium deleniti et soluta in,
+                rerum corporis velit blanditiis dolores doloremque fuga?
+              </p>
+              <a href="#" target="_blank" class="mainPage"
+                ><button class="d-block">Coming Soon</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
