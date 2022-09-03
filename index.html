@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dana Klymenko Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio | Klymenko Dana - frontend developer based in Ukraine, Kyiv"
+    />
+    <title>Dana Klymenko - Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +18,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-element">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-element">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Dana Klymenko</a>
         <button
@@ -45,36 +49,42 @@
         </div>
       </div>
     </nav>
-    <div class="heading-wrap">
-      <h2>&lt;Hello world,&gt; I am</h2>
-      <div class="main-heading-display">
-        <span class="lastName">Klymenko</span>
-        <h1>Dana</h1>
+    <header>
+      <div class="heading-wrap">
+        <h2>&lt;Hello world,&gt; I am</h2>
+        <h1><span class="lastName">Klymenko</span>Dana</h1>
+        <h3>&lt;&#47;Frontend developer based in Europe&gt;</h3>
       </div>
-      <h3>&lt;&#47;Frontend developer based in Europe&gt;</h3>
-    </div>
-    <div class="navigation">
-      <a href="info/about.html" target="_blank" class="mainPage"
-        ><button>About me</button></a
-      >
-      <a href="info/about.html#contact-me" target="_blank" class="mainPage"
-        ><button>Contact Page</button></a
-      >
-    </div>
+      <div class="navigation text-center">
+        <a href="info/about.html" target="_blank" class="mainPage"
+          ><button class="headerButton">About me</button></a
+        >
+        <a href="info/about.html#contact-me" target="_blank" class="mainPage"
+          ><button class="headerButton" title="Let's talk">
+            Contact me
+          </button></a
+        >
+      </div>
+    </header>
     <section>
+      <div>
+        <h2 class="sub-heading">Recent works.</h2>
+        <hr />
+      </div>
       <div class="container my-5">
         <div class="row my-5">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <img
               src="images/mounts-prjct.png"
-              alt="Carpathians Landing page"
-              class="img-fluid rounded shadow box-main-page ps-0"
+              alt="screencap of the Carpathians landing page"
+              title="Carpathians landing page preview"
+              class="d-md-block d-none img-fluid rounded shadow box-main-page ps-0"
               width="600px"
             />
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="d-flex flex-column">
-              <h2 class="ms-4 text-start box-main-page">
+              <h2 class="text-stroke text-center ms-4 box-main-page">
                 Carpathian Mountains app
               </h2>
               <p class="bg-transparent">
@@ -89,15 +99,22 @@
                 href="https://gilded-mounts.netlify.app/"
                 target="_blank"
                 class="mainPage"
-                ><button class="d-block">Launch Carpathians app</button></a
+                ><button
+                  class="d-block"
+                  title="Click here to view Carpathians app"
+                >
+                  Launch Carpathians app
+                </button></a
               >
             </div>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="d-flex flex-column">
-              <h2 class="ms-4 text-start box-main-page">Weather app</h2>
+              <h2 class="text-stroke text-center ms-4 box-main-page">
+                Weather app
+              </h2>
               <p class="bg-transparent">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                 nulla rem est id suscipit molestias praesentium consectetur
@@ -110,31 +127,37 @@
                 href="https://my-first-weather-project.netlify.app/"
                 target="_blank"
                 class="mainPage"
-                ><button class="d-block">Launch Weather app</button></a
+                ><button class="d-block" title="Click here to view Weather app">
+                  Launch Weather app
+                </button></a
               >
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <img
               src="images/weather-prjct.png"
-              alt="Weather app"
-              class="img-fluid rounded shadow box-main-page ps-0"
+              alt="screencap of the Weather app"
+              title="Weather app preview"
+              class="d-md-block d-none img-fluid rounded shadow box-main-page ps-0"
               width="600px"
             />
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <img
               src="images/coming_soon.jpg"
-              alt="Coming soon"
-              class="img-fluid rounded shadow box-main-page ps-0"
+              alt="screencap of Croissant project"
+              title="Croissant project preview"
+              class="d-md-block d-none img-fluid rounded shadow box-main-page ps-0"
               width="600px"
             />
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="d-flex flex-column">
-              <h2 class="ms-4 text-start box-main-page">Coming Soon</h2>
+              <h2 class="text-stroke text-center ms-4 box-main-page">
+                Croissant project
+              </h2>
               <p class="bg-transparent">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                 nulla rem est id suscipit molestias praesentium consectetur
@@ -143,8 +166,16 @@
                 dolor. Expedita odit nesciunt, laudantium deleniti et soluta in,
                 rerum corporis velit blanditiis dolores doloremque fuga?
               </p>
-              <a href="#" target="_blank" class="mainPage"
-                ><button class="d-block">Coming Soon</button></a
+              <a
+                href="https://croissant-sweetproject.netlify.app/"
+                target="_blank"
+                class="mainPage"
+                ><button
+                  class="d-block"
+                  title="Click here to view the Croissant project"
+                >
+                  Launch Croissant project
+                </button></a
               >
             </div>
           </div>
