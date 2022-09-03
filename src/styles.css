@@ -180,8 +180,7 @@ a.general {
    }
 
    .lastName {
-      font-size: 23px;
-      transform: rotate(-90deg);
+      font-size: 15px;
    }
 
    h2 {
@@ -203,5 +202,12 @@ a.general {
    div.paragraph-wrap {
       display: flex;
       flex-direction: column;
+   }
+}
+
+@media (max-width: 324px) {
+   .lastName {
+      transform: rotate(-90deg);
+      font-size: 24px;
    }
 }
