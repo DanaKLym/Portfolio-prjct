@@ -10,7 +10,7 @@
 }
 
 body {
-   background: var(--background-color);
+   background: linear-gradient(0deg, rgba(241, 230, 245, 1) 50%, rgba(193, 155, 208, 1) 80%);
 }
 
 .text-align-center {
@@ -39,7 +39,7 @@ body {
 }
 
 header {
-   background: var(--primary-color);
+   /*background: var(--primary-color);*/
    padding: 80px 60px;
 }
 
