@@ -10,7 +10,7 @@
 }
 
 body {
-   background: linear-gradient(0deg, rgba(241, 230, 245, 1) 50%, rgba(193, 155, 208, 1) 80%);
+   background: var(--background-color);
 }
 
 .text-align-center {
@@ -39,12 +39,12 @@ body {
 }
 
 header {
-   /*background: var(--primary-color);*/
-   padding: 80px 60px;
+   background: var(--primary-color);
+   padding: 60px 60px;
 }
 
-.heading-wrap {
-   padding: 20px 150px;
+.hero {
+   padding: 10px 150px;
 }
 
 h2, h3 {
@@ -53,52 +53,54 @@ h2, h3 {
 
 h1 {
    text-align: center;
-   font-size: 220px;
+   font-size: 150px;
    color: #F2FEDC;
    font-family: var(--primary-font);
-   margin: 30px 0 10px;
+   margin: 0 10px;
 }
 
+.accentLetter {
+   font-size: 230px;
+}
 
 .lastName {
-   writing-mode: vertical-rl;
-   transform: rotate(-180deg);
-   font-size: 33px;
+   position: relative;
+   top: 7rem;
+   font-size: 63px;
    color: #F2FEDC;
+   opacity: 0.7;
    font-family: var(--primary-font);
+   
+   font-weight: 100;
 }
 
 
 h2 {
-   margin: 10px 0;
+   margin: 0;
    text-align: start;
    font-size: 50px;
    font-family: var(--primary-font);
-font-weight: 500;
+   font-weight: 500;
+}
+
+hr.heroLine {
+   color: #c9f80a;
+   width: 23%;
+   opacity: 1;
 }
 
 h3 {
-   text-align: end;
    margin: 5px 0;
-   font-size: 20px;
+   font-size: 40px;
+   font-weight: 400;
+   font-family: 'Raleway',
+      sans-serif;
 }
 
 
 div.navigation {
    display: flex;
    justify-content: center;
-}
-
-.headerButton {
-   box-shadow: 5px 5px #907399;
-}
-
-.headerButton:hover {
-   box-shadow: 8px 8px 8px #907399;
-}
-
-.headerButton:active {
-   box-shadow: 0px 0px 20px #aaf322;
 }
 
 button {
@@ -165,12 +167,12 @@ a.general {
 
 @media (max-width: 1024px) {
    header {
-      padding: 80px 20px;
+      padding: 20px;
    }
 
-   .heading-wrap {
+   .hero {
          margin: 0;
-         padding: 80px 10px;
+         padding: 80px 10px 30px;
          text-align: start;
    }
 
@@ -179,17 +181,25 @@ a.general {
       text-align: center;
    }
 
-   .lastName {
-      font-size: 15px;
+   .accentLetter {
+      font-size: 180px;
    }
 
+   .lastName {
+      /*transform: rotate(-90deg);
+      font-size: 55px;*/
+      font-size: 50px;
+      position: relative;
+      top: 7rem;
+   }
+   
    h2 {
       font-size: 28px;
       text-align: center;
    }
 
    h3 {
-      font-size: 15px;
+      font-size: 35px;
       text-align: center;
    }
 
@@ -205,9 +215,25 @@ a.general {
    }
 }
 
-@media (max-width: 324px) {
-   .lastName {
-      transform: rotate(-90deg);
-      font-size: 24px;
+@media (max-width: 576px) {
+h1 {
+      font-size: 60px;
+      text-align: center;
    }
+
+   .accentLetter {
+      font-size: 110px;
+   }
+
+   .lastName {
+      position: relative;
+      top: 3rem;
+      font-size: 30px;
+      font-weight: 300;
+   }
+   
+   h3 {
+      font-size: 22px;
+      font-weight: 300;
+      }
 }
