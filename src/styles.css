@@ -3,6 +3,8 @@
    serif;
 --secondary-font: 'Jost',
    sans-serif;
+--default-font: 'Raleway',
+   sans-serif;
 --primary-color: #c19bd0;  
 --secondary-color: #cdee4a;
 --background-color: #f1e6f5;
@@ -26,7 +28,7 @@ body {
 }
 
 .image-shadow {
-   border: 1px solid #d5f068;
+   border: 1px solid rgba(0, 0, 0, 0.4);
    box-shadow: 6px 5px #d5f068;
 }
 
@@ -102,8 +104,7 @@ h3 {
    margin: 5px 0;
    font-size: 40px;
    font-weight: 400;
-   font-family: 'Raleway',
-      sans-serif;
+   font-family: var(--default-font);
 }
 
 
@@ -112,8 +113,44 @@ div.navigation {
    justify-content: center;
 }
 
+
+.sub-heading {
+   color: var(--primary-color);
+   font-weight: 700;
+   line-height: 2.5;
+   margin-left: 7%
+}
+
+hr {
+   color: #350e35;
+   width: 95%;
+   margin: 0 auto;
+}
+
 .homePagePreview {
    width: 400px;
+   margin: auto;
+}
+
+a.homePageProjectLink {
+   text-decoration: none;
+   font-family: var(--default-font);
+   font-size: 30px;
+   font-weight: 400;
+   color: rgba(0, 0, 0, 0.7);
+
+   background: linear-gradient(var(--background-color) 50%, var(--primary-color) 50%);
+   background-size: auto 195%;
+   transition: background 400ms ease-in-out;
+}
+
+a.homePageProjectLink:hover {
+   background-position-y: 100%;
+   color: var(--background-color);
+   text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.7);
+   /*border: 1px solid rgba(0, 0, 0, 0.7);
+   box-shadow: 5px 5px rgb(180, 217, 241);
+   transition: all 300ms ease-in-out;*/
 }
 
 button {
@@ -140,23 +177,6 @@ button:active {
    box-shadow: 0px 0px 20px #aaf322;
 }
 
-.sub-heading {
-   color: var(--primary-color);
-   font-weight: 700;
-   line-height: 2.5;
-   margin-left: 7%;
-}
-
-hr {
-   color: #350e35;
-   width: 90%;
-   margin: 0 auto;
-}
-
-a.mainPage {
-   text-decoration: none;
-   line-height: 1.5;
-}
 
 div.paragraph-wrap {
    display: flex;
@@ -165,8 +185,6 @@ div.paragraph-wrap {
 p {
    padding: 20px 24px;
    margin: 20px;
-   background: var(--background-color);
-   border-radius: 20px;
    font-family: var(--secondary-font);
    text-align: start;
 }
@@ -176,6 +194,11 @@ a.general {
    font-family: var(--secondary-font);
    font-size: 25px;
    color: #385F00;
+}
+
+a.launchProjectButton {
+   text-decoration: none;
+   line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
@@ -222,10 +245,20 @@ a.general {
    flex-direction: column;
    }
 
+   .sub-heading {
+      text-align: center !important;
+   }
+
+   hr {
+      margin: auto;
+      width: 70%;
+   }
+
    div.paragraph-wrap {
       display: flex;
       flex-direction: column;
    }
+
 }
 
 @media (max-width: 576px) {
@@ -248,5 +281,14 @@ h1 {
    h3 {
       font-size: 22px;
       font-weight: 300;
+      }
+
+   .sub-heading {
+      text-align: center !important;
+      }
+      
+   hr {
+      margin: auto;
+      width: 70%;
       }
 }
