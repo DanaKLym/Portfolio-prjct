@@ -21,6 +21,15 @@ body {
    -webkit-text-stroke: 0.3px #5aa311;
 }
 
+.medium-text-size {
+   font-size: 45px;
+}
+
+.image-shadow {
+   border: 1px solid #d5f068;
+   box-shadow: 6px 5px #d5f068;
+}
+
 .box-main-page {
    margin-left: 20px;
 }
@@ -101,6 +110,10 @@ h3 {
 div.navigation {
    display: flex;
    justify-content: center;
+}
+
+.homePagePreview {
+   width: 400px;
 }
 
 button {
