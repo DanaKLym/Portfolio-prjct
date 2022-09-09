@@ -1,3 +1,5 @@
+/*footer links backgrounds: lightcyan*/
+
 :root {
 --primary-font: 'Playfair Display',
    serif;
@@ -130,6 +132,11 @@ hr {
 .homePagePreview {
    width: 400px;
    margin: auto;
+   transition: all 400ms ease-in-out;
+}
+
+.homePagePreview:hover {
+   scale: 110%;
 }
 
 a.homePageProjectLink {
@@ -148,9 +155,6 @@ a.homePageProjectLink:hover {
    background-position-y: 100%;
    color: var(--background-color);
    text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.7);
-   /*border: 1px solid rgba(0, 0, 0, 0.7);
-   box-shadow: 5px 5px rgb(180, 217, 241);
-   transition: all 300ms ease-in-out;*/
 }
 
 button {
@@ -193,7 +197,7 @@ a.general {
    text-decoration: none;
    font-family: var(--secondary-font);
    font-size: 25px;
-   color: #385F00;
+   color: #25291faf;
 }
 
 a.launchProjectButton {
