@@ -34,6 +34,11 @@ body {
    box-shadow: 6px 5px #d5f068;
 }
 
+.image-shadow-v2 {
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   box-shadow: 5px 5px #cab7d1;
+}
+
 .box-main-page {
    margin-left: 20px;
 }
