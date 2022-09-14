@@ -137,8 +137,8 @@ hr {
 }
 
 .homePagePreview {
-   width: 400px;
-   margin: auto;
+   max-width: 400px;
+   margin: 0 auto;
    transition: all 400ms ease-in-out;
 }
 
@@ -280,6 +280,10 @@ a.launchProjectButton:hover {
       margin: auto;
       width: 70%;
    }
+ 
+   .homePagePreview {
+      max-width: 200px;
+   }
 }
 
 @media (max-width: 576px) {
@@ -311,5 +315,28 @@ h1 {
    hr {
       margin: auto;
       width: 70%;
+      }
+}
+
+@media (max-width: 400px) {
+   h1 {
+         font-size: 50px;
+         text-align: center;
+      }
+   
+      .accentLetter {
+         font-size: 70px;
+      }
+   
+      .lastName {
+         position: relative;
+         top: 1.5rem;
+         font-size: 25px;
+         font-weight: 400;
+      }
+
+      h3 {
+        font-size: 15px; 
+        font-weight: 400;
       }
 }
