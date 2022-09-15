@@ -191,6 +191,7 @@ button:active {
 
 .about-section header {
    background-color: var(--background-color);
+   padding: 80px 0;
 }
 
 .about-section h1 {
@@ -202,10 +203,29 @@ button:active {
 .about-section h3 {
    font-size: 24px;
    font-style: italic;
+   color: rgba(95, 133, 13, 0.9);
 }
 
 .about-section img {
    max-width: 400px;
+}
+
+.about-section .icon {
+   transition: all 300ms ease-in-out;
+   color: var(--primary-color);
+   filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.5));
+}
+
+.about-section .icon:hover {
+   color: var(--secondary-color);
+}
+
+.about-section a img {
+   transition: all 300ms ease-in-out;
+}
+
+.about-section a img:hover {
+   scale: 105%;
 }
 
 p {
@@ -257,7 +277,7 @@ a.launchProjectButton:hover {
    }
    
    h2 {
-      font-size: 28px;
+      font-size: 50px;
       text-align: center;
    }
 
@@ -282,6 +302,14 @@ a.launchProjectButton:hover {
    }
  
    .homePagePreview {
+      max-width: 200px;
+   }
+
+   .about-section h1, .about-section h3, .about-section p {
+      text-align: center !important;
+   }
+
+   .about-section img {
       max-width: 200px;
    }
 }
