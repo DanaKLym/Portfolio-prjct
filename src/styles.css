@@ -259,7 +259,7 @@ a.general {
    color: #25291faf;
    transition: all 300ms ease-in-out;
    padding: 5px;
-   border-radius: 20%;
+   border-radius: 10px;
 }
 
 .content a.general:hover {
