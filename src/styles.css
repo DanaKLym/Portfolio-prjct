@@ -11,7 +11,8 @@ background rgba(233, 212, 255, 1)*/
 --primary-color: #c19bd0;  
 --secondary-color: #cdee4a;
 --background-color: #f1e6f5;
---button-background-color: rgba(255, 255, 255, 0.719);  
+--button-background-color: rgba(255, 255, 255, 0.719);
+--transition: all 400ms ease-in-out;  
 }
 
 /*generic classes*/
@@ -44,6 +45,8 @@ body {
    background: var(--background-color);
 }
 
+/*navbar settings*/
+
 .fixed-element {
    position: fixed;
    top: 0;
@@ -55,6 +58,29 @@ body {
 .navbar {
    border-bottom: 1px solid var(--background-color);
    backdrop-filter: blur(8px);
+}
+
+.nav-link {
+   color: var(--secondary-color) !important;
+   transition: var(--transition);
+}
+
+.nav-link:hover {
+   color: #9e7eaa !important;
+}
+
+.active {
+   border-top: 1px solid var(--secondary-color);
+   border-bottom: 1px solid var(--secondary-color);
+   font-weight: 700;
+}
+
+.content .nav-link {
+   color: var(--primary-color) !important;
+}
+
+.content .nav-link:hover {
+   color: #9e7eaa !important;
 }
 
 header {
@@ -136,7 +162,7 @@ hr {
 .homePagePreview {
    max-width: 400px;
    margin: 0 auto;
-   transition: all 400ms ease-in-out;
+   transition: var(--transition);
 }
 
 .homePagePreview:hover {
@@ -172,7 +198,7 @@ button {
    font-size: 20px;
    font-weight: 500;
    box-shadow: 5px 5px #cab7d1;
-   transition: 400ms ease-in-out;
+   transition: var(--transition);
 }
 
 button:hover {
@@ -231,7 +257,7 @@ a.general {
 }
 
 .content .icon {
-   transition: all 300ms ease-in-out;
+   transition: var(--transition);
    color: var(--primary-color);
    filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.5));
 }
@@ -241,7 +267,7 @@ a.general {
 }
 
 .content a img {
-   transition: all 300ms ease-in-out;
+   transition: var(--transition);
 }
 
 .content a img:hover {
@@ -257,7 +283,7 @@ a.general {
    font-family: var(--secondary-font);
    font-size: 25px;
    color: #25291faf;
-   transition: all 300ms ease-in-out;
+   transition: var(--transition);
    padding: 5px;
    border-radius: 10px;
 }
