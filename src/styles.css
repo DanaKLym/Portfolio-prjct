@@ -1,6 +1,7 @@
 /*footer links backgrounds: lightcyan
 background rgba(233, 212, 255, 1)
-#d5f068*/
+#d5f068
+#c19bd0 - former primary color*/
 
 :root {
 --primary-font: 'Playfair Display',
@@ -9,7 +10,7 @@ background rgba(233, 212, 255, 1)
    sans-serif;
 --default-font: 'Raleway',
    sans-serif;
---primary-color: #c19bd0;  
+--primary-color: #ae91c9;  
 --secondary-color: #cdee4a;
 --background-color: #f1e6f5;
 --button-background-color: rgba(255, 255, 255, 0.719);
@@ -67,7 +68,7 @@ body {
 }
 
 .nav-link:hover {
-   color: #9e7eaa !important;
+   color: #7f5e8b !important;
 }
 
 .active {
