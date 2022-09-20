@@ -1,7 +1,8 @@
 /*footer links backgrounds: lightcyan
 background rgba(233, 212, 255, 1)
 #d5f068
-#c19bd0 - former primary color*/
+#c19bd0 - former primary color
+#f1e6f5 - former background color*/
 
 :root {
 --primary-font: 'Playfair Display',
@@ -193,7 +194,6 @@ a.homePageProjectLink:hover {
 
 button {
    padding: 10px 20px;
-   margin: 0 30px 20px;
    border: 1px solid var(--button-background-color);
    background: var(--button-background-color);
    font-family: var(--primary-font);
@@ -227,14 +227,6 @@ a.launchProjectButton {
 a.launchProjectButton:hover {
    color: #203F00;
 }
-
-a.general {
-   text-decoration: none;
-   font-family: var(--secondary-font);
-   font-size: 25px;
-   color: #25291faf;
-}
-
 /*Abount page and Projects page selectors*/
 
 .content header {
@@ -276,7 +268,7 @@ a.general {
 }
 
 .content hr {
-   width: 30%;
+   width: 50%;
 }
 
 .content a.general {
@@ -295,6 +287,40 @@ a.general {
 
 .content a.general:active {
    box-shadow: inset 2px 2px 2px var(--primary-color), inset -2px -2px 2px var(--button-background-color);
+}
+
+.content section .contact-box {
+   background: rgba(174, 145, 201, 0.102);
+   border-radius: 10px;
+   padding: 30px;
+}
+
+footer .socialLinks {
+   text-decoration: none;
+   padding: 15px 20px;
+   margin: 20px;
+   font-size: 25px;
+   color: rgba(25, 29, 20, 0.686);
+   box-shadow: 0 0 3px var(--primary-color), inset 0 0 20px var(--button-background-color);
+   border-radius: 51%;
+   transition: var(--transition);
+}
+
+footer .socialLinks:hover {
+   color: #F2FEDC;
+   background: var(--secondary-color);
+   box-shadow: inset 0 0 5px #74a518;
+}
+
+footer a.general {
+   text-decoration: none;
+   font-family: var(--secondary-font);
+   font-size: 18px;
+   color: #25291faf;
+}
+
+footer a.general:hover {
+   text-decoration: underline;
 }
 
 @media (max-width: 992px) {
