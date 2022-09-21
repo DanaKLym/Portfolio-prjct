@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio | Klymenko Dana - Front End developer based in Ukraine, Kyiv"
+      content="Klymenko Dana | Front End developer based in Ukraine, Kyiv"
     />
     <title>Dana Klymenko - Front End Developer</title>
     <script
@@ -31,7 +31,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-element">
       <div class="container">
-        <a class="navbar-brand p-0" href="#"
+        <a class="navbar-brand p-0" href="/" title="Back to the top"
           ><img
             src="/images/logo.png"
             alt="logo"
@@ -55,16 +55,27 @@
         >
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/info/about.html">About me</a>
-            <a class="nav-link" aria-current="page" href="/info/projects.html"
+            <a class="nav-link" href="/info/about.html" title="About Bohdana"
+              >About me</a
+            >
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="/info/projects.html"
+              title="Bohdana's work"
               >Projects</a
             >
-            <a class="nav-link" href="/info/contact-me.html">Contact me</a>
+            <a
+              class="nav-link"
+              href="/info/contact-me.html"
+              title="Contact Bohdana"
+              >Contact me</a
+            >
           </div>
         </div>
       </div>
     </nav>
-    <header id="hero-animation">
+    <header>
       <div class="hero">
         <div class="fullName">
           <h2 class="lastName text-center">&lt;Klymenko&gt;</h2>
@@ -90,8 +101,8 @@
           </p>
           <img
             src="/images/empty-image.jpg"
-            alt="profile picture"
-            title="profile picture"
+            alt="Bohdana's photo"
+            title="Hey, that's me on the photo"
             class="col-md-6 img-fluid d-block homePagePreview image-shadow"
           />
         </div>
@@ -105,12 +116,13 @@
           <div class="col">
             <img
               src="/images/mounts-prjct.png"
-              alt="Carpathians project screencap"
-              title="Carpathians app preview"
+              alt="Carpathians project preview"
+              title="Look at this beauty!"
               class="d-block image-fluid homePagePreview image-shadow-v2"
             />
             <a
               href="/info/projects.html#carpathians-app"
+              title="Go on and click here to learn more ⛰️"
               class="homePageProjectLink d-block text-center my-3"
               >Mountains app</a
             >
@@ -118,12 +130,13 @@
           <div class="col">
             <img
               src="/images/weather-prjct.png"
-              alt="weather project screencap"
-              title="Weather app preview"
+              alt="Weather project preview"
+              title="⛈️ Such weather, much wow 🐶"
               class="d-block image-fluid homePagePreview image-shadow"
             />
             <a
               href="/info/projects.html#weather-app"
+              title="Grab the umbrella before you go there ☔"
               class="homePageProjectLink d-block text-center my-3"
               >Weather app</a
             >
@@ -133,12 +146,13 @@
           <div class="col">
             <img
               src="/images/croissant-prjct.png"
-              alt="Croissant project screencap"
-              title="Croissant project preview"
+              alt="Croissant project preview"
+              title="Ooh la la, croissant 🥐"
               class="d-block image-fluid homePagePreview image-shadow"
             />
             <a
               href="/info/projects.html#croissant-project"
+              title="You'd better not be hungry"
               class="homePageProjectLink d-block text-center mt-3"
               >Croissant project</a
             >
@@ -147,9 +161,14 @@
             <img
               src="/images/coming_soon.png"
               alt="coming soon picture"
+              title="Ready, steady, what?"
               class="d-block image-fluid homePagePreview image-shadow-v2"
             />
-            <a href="#" class="homePageProjectLink d-block text-center my-3"
+            <a
+              href="/#coming-soon"
+              title="You are free to click"
+              class="homePageProjectLink d-block text-center my-3"
+              id="coming-soon"
               >Coming soon</a
             >
           </div>
@@ -164,15 +183,20 @@
               href="https://github.com/DanaKLym?tab=repositories"
               target="_blank"
               class="socialLinks"
+              title="My GitHub"
               ><i class="fa-brands fa-github my-3"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/bohdana-klymenko-254472176/"
               target="_blank"
               class="socialLinks"
+              title="My LinkedIn"
               ><i class="fa-brands fa-linkedin my-3"></i
             ></a>
-            <a href="mailto:contact.kbohdana@gmail.com" class="socialLinks"
+            <a
+              href="mailto:contact.kbohdana@gmail.com"
+              class="socialLinks"
+              title="Email me"
               ><i class="fa-solid fa-envelope my-3"></i
             ></a>
           </div>
@@ -185,6 +209,7 @@
             href="https://github.com/DanaKLym/Portfolio-prjct"
             target="_blank"
             class="general"
+            title="Go see the source code on GitHub"
             >open-sourced</a
           >.
         </p>
@@ -195,5 +220,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/src/index.js"></script>
   </body>
 </html>
