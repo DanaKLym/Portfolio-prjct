@@ -18,7 +18,65 @@ background rgba(233, 212, 255, 1)
 --transition: all 400ms ease-in-out;  
 }
 
+/*waves*/
+
+.waves {
+   position: relative;
+   width: 100%;
+   height: 15vh;
+   margin-bottom: -7px;
+   /*Fix for safari gap*/
+   min-height: 100px;
+   max-height: 150px;
+}
+
+.parallax>use {
+   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+   animation-delay: -2s;
+   animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+   animation-delay: -3s;
+   animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+   animation-delay: -4s;
+   animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+   animation-delay: -5s;
+   animation-duration: 20s;
+}
+
+@keyframes move-forever {
+   0% {
+      transform: translate3d(-90px, 0, 0);
+   }
+
+   100% {
+      transform: translate3d(85px, 0, 0);
+   }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+   .waves {
+      height: 40px;
+      min-height: 40px;
+   }
+}
+
 /*generic classes*/
+
+.expert {
+   color: rgb(241, 230, 245);
+}
 
 .text-align-center {
    text-align: center;
@@ -97,7 +155,7 @@ body {
 
 header {
    background: var(--primary-color);
-   padding: 60px 60px;
+   padding-top: 60px;
 }
 
 /*homepage selectors*/
@@ -236,7 +294,7 @@ a.launchProjectButton {
 a.launchProjectButton:hover {
    color: #203F00;
 }
-/*Abount page and Projects page selectors*/
+/*About page and Projects page selectors*/
 
 .content header {
    background-color: var(--background-color);
@@ -334,7 +392,7 @@ footer a.general:hover {
 
 @media (max-width: 992px) {
    header {
-      padding: 20px;
+      padding-top: 20px;
    }
 
    .hero {
@@ -387,12 +445,16 @@ footer a.general:hover {
       max-width: 200px;
    }
 
-   .content h1, .content h3, .content p {
+   .content h1, .content h3, .content p, p {
       text-align: center !important;
    }
 
    .content img {
       margin: auto !important;
+   }
+
+   .content a.general {
+      font-size: 18px;
    }
 }
 
