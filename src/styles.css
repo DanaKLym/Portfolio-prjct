@@ -29,13 +29,22 @@ background rgba(233, 212, 255, 1)
 }
 
 .image-shadow {
-   border: 1px solid rgba(0, 0, 0, 0.4);
+   border: 1px solid rgba(208, 223, 141, 0.8);
    box-shadow: 6px 5px 2px rgba(208, 223, 141, 0.8);
 }
 
 .image-shadow-v2 {
-   border: 1px solid rgba(0, 0, 0, 0.4);
+   border: 1px solid #cab7d1;
    box-shadow: 6px 5px 2px #cab7d1;
+}
+
+.grayscale-filter {
+   filter: grayscale(100%);
+   transition: var(--transition);
+}
+
+.grayscale-filter:hover {
+   filter: grayscale(0%);
 }
 
 .buttonWidth {
