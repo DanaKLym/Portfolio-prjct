@@ -106,7 +106,7 @@ background rgba(233, 212, 255, 1)
 }
 
 .buttonWidth {
-   width: 275px;
+   width: 273px;
 }
 
 
@@ -453,7 +453,7 @@ footer a.general:hover {
       margin: auto !important;
    }
 
-   .content a.general {
+   #email-link {
       font-size: 18px;
    }
 }
