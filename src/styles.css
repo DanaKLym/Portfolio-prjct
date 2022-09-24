@@ -501,6 +501,10 @@ footer a.general:hover {
    .content h2 {
       font-size: 40px;
    }
+
+   .content img {
+      max-width: 350px;
+   }
 }
 
 @media (max-width: 400px) {
