@@ -1,8 +1,8 @@
 /*footer links backgrounds: lightcyan
-background rgba(233, 212, 255, 1)
-#d5f068
-#c19bd0 - former primary color
-#f1e6f5 - former background color*/
+--primary-color: #ae91c9; (CHANGED)
+--secondary-color: #cdee4a;
+--background-color: #f1e6f5;
+--button-background-color: rgba(255, 255, 255, 0.719);*/
 
 :root {
 --primary-font: 'Playfair Display',
@@ -11,7 +11,7 @@ background rgba(233, 212, 255, 1)
    sans-serif;
 --default-font: 'Raleway',
    sans-serif;
---primary-color: #ae91c9;  
+--primary-color: #a487ca;  
 --secondary-color: #cdee4a;
 --background-color: #f1e6f5;
 --button-background-color: rgba(255, 255, 255, 0.719);
